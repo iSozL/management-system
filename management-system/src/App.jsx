@@ -10,6 +10,7 @@ import {
 import Home from "./page/home/index";
 import Layout from "./component/layout/index";
 import Product from "./page/product/index";
+import Order from "./page/order/index";
 class App extends React.Component {
   render() {
     return (
@@ -17,6 +18,7 @@ class App extends React.Component {
         <Layout>
           <Route exact path="/" component={Home} />
           <Route path="/product" component={Product} />
+          <Route path="/order" component={Order} />
         </Layout>
       </Router>
     );
