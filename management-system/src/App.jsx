@@ -9,13 +9,14 @@ import {
 } from "react-router-dom";
 import Home from "./page/home/index";
 import Layout from "./component/layout/index";
-
+import Product from "./page/product/index";
 class App extends React.Component {
   render() {
     return (
       <Router>
         <Layout>
           <Route exact path="/" component={Home} />
+          <Route path="/product" component={Product} />
         </Layout>
       </Router>
     );
