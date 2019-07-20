@@ -24,7 +24,7 @@ class TopNav extends React.Component {
               )}
               <i className="fa fa-caret-down" /> */}
               <i className="fa fa-user fa-fw" />
-                <span>欢迎, 李四</span>
+              <span>欢迎, 李四</span>
               <i className="fa fa-caret-down" />
             </a>
             <ul className="dropdown-menu dropdown-user">

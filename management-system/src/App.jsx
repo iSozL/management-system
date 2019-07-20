@@ -15,7 +15,7 @@ class App extends React.Component {
     return (
       <Router>
         <Layout>
-          <Route exact path="/home" component={Home} />
+          <Route exact path="/" component={Home} />
         </Layout>
       </Router>
     );
