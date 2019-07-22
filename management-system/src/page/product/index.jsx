@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import './index.scss'
 import TableList from "../../utils/table-list/index"
+import axios from 'axios'
 const testList = [
   {
     id: 1,
@@ -26,6 +27,22 @@ const testList = [
   }
 ];
 class Product extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      testList: null
+    }
+  }
+  componentDidMount() {
+    axios.get('http://adminv2.happymmall.com/manage/product/list.do?pageNum=1', {
+      headers: {
+        
+      }
+    })
+      .then(function(res){
+        console.log(res.data)
+      })
+  }
   render() {
     let tableHeads = [
       {name: '商品ID', width: '10%'},
